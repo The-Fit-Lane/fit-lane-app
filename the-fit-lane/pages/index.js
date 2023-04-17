@@ -13,6 +13,11 @@ export default function HomePage() {
           <li><a href="">Shoes</a></li>
           <li><a href="">Sale</a></li>
         </ul>
+        <div>
+        <img className="logo" src="../Public/Images/LandingPage/search.png" alt="search"></img>
+        <img className="logo" src="../Public/Images/LandingPage/user.png" alt="User"></img>
+        <img className="logo" src="../Public/Images/LandingPage/cart.png" alt="cart"></img>
+        </div>
       </nav>
     </div>
   )

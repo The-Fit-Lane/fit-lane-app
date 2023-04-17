@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -11,15 +12,17 @@ export default function HomePage() {
           width={130}
         />
 
-        <img className="logo"  ></img>
-        <ul>
-          <li><a href="">Women</a></li>
-          <li><a href="">Men</a></li>
-          <li><a href="">Accessories</a></li>
-          <li><a href="">Gift Sets</a></li>
-          <li><a href="">Shoes</a></li>
-          <li><a href="">Sale</a></li>
-        </ul>
+        <div>
+
+        <Link href="">Women</Link>
+        <Link href="">Men</Link>
+        <Link href="">Accessories</Link>
+        <Link href="">Gift Sets</Link>
+        <Link href="">Shoes</Link>
+        <Link href="">Sale</Link>
+
+        </div> 
+        
         <div>
         <Image
           src="/search.png"

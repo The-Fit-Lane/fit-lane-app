@@ -1,10 +1,17 @@
-
+import Image from 'next/image';
 
 export default function HomePage() {
   return (
     <div>
       <nav className="nav">
-        <img className="logo" src="../Public/Images/LandingPage/fitlaneLogo.png" alt="fitlane Logo"></img>
+        <Image
+          src="/fitlaneLogo.png"
+          alt="fitlane Logo"
+          height={100}
+          width={130}
+        />
+
+        <img className="logo"  ></img>
         <ul>
           <li><a href="">Women</a></li>
           <li><a href="">Men</a></li>
@@ -14,9 +21,24 @@ export default function HomePage() {
           <li><a href="">Sale</a></li>
         </ul>
         <div>
-        <img className="logo" src="../Public/Images/LandingPage/search.png" alt="search"></img>
-        <img className="logo" src="../Public/Images/LandingPage/user.png" alt="User"></img>
-        <img className="logo" src="../Public/Images/LandingPage/cart.png" alt="cart"></img>
+        <Image
+          src="/search.png"
+          alt="Search"
+          height={50}
+          width={50}
+        />
+         <Image
+          src="/user.png"
+          alt="User"
+          height={50}
+          width={50}
+        />
+         <Image
+           src="/cart.png"
+           alt="Cart"
+           height={50}
+           width={50}
+        />
         </div>
       </nav>
     </div>

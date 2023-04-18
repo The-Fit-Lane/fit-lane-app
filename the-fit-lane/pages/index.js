@@ -5,12 +5,15 @@ export default function HomePage() {
   return (
     <div>
       <nav className="nav">
+      <Link href="/">
         <Image
           src="/fitlaneLogo.png"
           alt="fitlane Logo"
           height={100}
           width={130}
         />
+        </Link>
+        
 
         <div>
 
@@ -22,7 +25,7 @@ export default function HomePage() {
         <Link href="">Sale</Link>
 
         </div> 
-        
+
         <div>
         <Image
           src="/search.png"

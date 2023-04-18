@@ -31,18 +31,21 @@ export default function NavBar() {
 
         <div className='navbar-icons'>
         <Image
+          className='icon'
           src="/search.png"
           alt="Search"
           height={30}
           width={30}
         />
          <Image
+          className='icon'
           src="/user.png"
           alt="User"
           height={30}
           width={30}
         />
          <Image
+           className='icon'
            src="/cart.png"
            alt="Cart"
            height={30}

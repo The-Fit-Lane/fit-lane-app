@@ -1,51 +1,52 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 export default function NavBar() {
   return (
     <div 
-    className='py-5 flex items-center justify-between space-y-9 bg-black px-8 mx-auto text-slate-200'
+    className='NavBar'
     >
       <nav className="nav">
       <Link href="/">
         <Image
-          src="/fitlaneLogo.png"
+          src="/FitLaneLogo 1.svg"
           alt="fitlane Logo"
-          height={100}
-          width={130}
+          height={80}
+          width={100}
         />
         </Link>
         
 
-        <div>
+        <div className='navbar-links'>
 
-        <Link href="">Women</Link>
-        <Link href="">Men</Link>
-        <Link href="">Accessories</Link>
-        <Link href="">Gift Sets</Link>
-        <Link href="">Shoes</Link>
-        <Link href="">Sale</Link>
+        <Link className='link' href="">Women</Link>
+        <Link className='link' href="">Men</Link>
+        <Link className='link' href="">Accessories</Link>
+        <Link className='link' href="">Gift Sets</Link>
+        <Link className='link' href="">Shoes</Link>
+        <Link className='link' href="">Sale</Link>
 
         </div> 
 
-        <div>
+        <div className='navbar-icons'>
         <Image
           src="/search.png"
           alt="Search"
-          height={50}
-          width={50}
+          height={30}
+          width={30}
         />
          <Image
           src="/user.png"
           alt="User"
-          height={50}
-          width={50}
+          height={30}
+          width={30}
         />
          <Image
            src="/cart.png"
            alt="Cart"
-           height={50}
-           width={50}
+           height={30}
+           width={30}
         />
         </div>
       </nav>

@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function HomePage() {
+export default function NavBar() {
   return (
-    <div>
+    <div 
+    className='py-5 flex items-center justify-between space-y-9 bg-black px-8 mx-auto text-slate-200'
+    >
       <nav className="nav">
       <Link href="/">
         <Image

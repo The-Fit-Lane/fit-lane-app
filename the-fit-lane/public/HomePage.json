@@ -1,0 +1,19 @@
+
+{
+    "items": {
+      "bootstrap": [
+        {
+          "id": 1,
+          "title": "Sports Bra",
+          "body": "Giving you the freedom to look good while doing the workouts you love.",
+          "imageUrl": "/female Sports bra.png"
+        },
+        {
+            "id": 1,
+            "title": "Sports Shoes",
+            "body": "If a good set of active wear improves your likelihood to go to the gym then you’re in the right place.",
+            "imageUrl": "/male shoes.png"
+          }
+        ]
+    }
+  }

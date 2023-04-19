@@ -17,7 +17,7 @@ export default function Main() {
                  <img src={item.imageUrl} alt="slides" />
                  <Carousel.Caption className={styles.caption}>
                    <h3>{item.title}</h3>
-                   <p>{item.body}</p>
+                   <h5>{item.body}</h5>
                    <button className="btn btn-danger">Shop Now</button>
                  </Carousel.Caption>
                </Carousel.Item>

@@ -1,28 +1,35 @@
 .NavBar {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
+    max-height: 11vh;
 }
 .NavBar .nav {
     display: flex;
     justify-content: space-between;
-   
+}
+
+.NavBar .logo {
+    position: relative;
+    right: 10rem;
+    bottom: 5px;
 }
 
 .navbar-links {
     position: relative;
     display: flex;
     min-width:50%;
-    justify-content: space-evenly;
-    top: 50px;
+    top: 15px;
+    left:38rem;
 }
 
 .navbar-links .link{
     color: black;
     max-width: 100px;
     max-height: 32px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     text-decoration: none;
+    margin-left: 2rem;
 }
 
 .navbar-icons {
@@ -30,5 +37,6 @@
     display: flex;
     min-width:15%;
     justify-content: space-evenly;
-    top: 50px;
+    top: 10px;
+    left: 10rem;
 }

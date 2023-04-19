@@ -2,12 +2,7 @@
 {
     "items": {
       "bootstrap": [
-        {
-          "id": 1,
-          "title": "Sports Bra",
-          "body": "Giving you the freedom to look good while doing the workouts you love.",
-          "imageUrl": "/female Sports bra.png"
-        },
+        
         {
             "id": 2,
             "title": "Sports Shoes",

@@ -8,7 +8,7 @@ export default function NavBar() {
     className='NavBar'
     >
       <nav className="nav">
-      <Link href="/">
+      <Link className='logo' href="/">
         <Image
           src="/FitLaneLogo 1.svg"
           alt="fitlane Logo"

@@ -3,6 +3,7 @@
     margin: auto;
     max-height: 11vh;
 }
+
 .NavBar .nav {
     display: flex;
     justify-content: space-between;
@@ -12,24 +13,34 @@
     position: relative;
     right: 10rem;
     bottom: 5px;
+    border-radius: 50%;
 }
 
 .navbar-links {
     position: relative;
     display: flex;
     min-width:50%;
-    top: 15px;
-    left:38rem;
+    top:3rem;
+    left:35rem;
 }
 
 .navbar-links .link{
     color: black;
-    max-width: 100px;
     max-height: 32px;
     font-size: 18px;
     line-height: 32px;
     text-decoration: none;
     margin-left: 2rem;
+    box-shadow: inset 0 0 0 0 black;
+    color: black;
+    transition: color .2s ease-in-out; 
+}
+
+.navbar-links .link:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding:  0 8px;
 }
 
 .navbar-icons {
@@ -37,6 +48,6 @@
     display: flex;
     min-width:15%;
     justify-content: space-evenly;
-    top: 10px;
+    top:2rem;
     left: 10rem;
 }

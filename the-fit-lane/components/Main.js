@@ -3,7 +3,6 @@ import { Carousel } from "react-bootstrap";
 import {useState} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Bootsrap.module.css";
-import NavBar from "./Navbar";
 
 export default function Main() {
         const { bootstrap } = items;

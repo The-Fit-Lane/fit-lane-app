@@ -1,58 +1,45 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Link from "next/link";
+import Image from "next/image";
+import React, { useState } from "react";
+import Logo from "../public/FitLaneLogo 1.svg";
+import NavItem from "./Navitem";
 
+const MENU_LIST = [
+  { text: "Home", href: "/" },
+  { text: "About Us", href: "/about" },
+  { text: "Contact", href: "/contact" },
+];
+const Navbar = () => {
+  const [navActive, setNavActive] = useState(null);
+  const [activeIdx, setActiveIdx] = useState(-1);
 
-export default function NavBar() {
   return (
-    <div 
-    className='NavBar'
-    >
-      <nav className="nav">
-      <Link className='logo' href="/">
-        <Image
-          src="/FitLaneLogo 1.svg"
-          alt="fitlane Logo"
-          height={80}
-          width={100}
-        />
+    <header>
+      <nav className={`nav`}>
+        <Link href={"/"} className="logo">
+            CodeWithMarish
         </Link>
-        
-
-        <div className='navbar-links'>
-
-        <Link className='link' href="">Women</Link>
-        <Link className='link' href="">Men</Link>
-        <Link className='link' href="">Accessories</Link>
-        <Link className='link' href="">Gift Sets</Link>
-        <Link className='link' href="">Shoes</Link>
-        <Link className='link' href="">Sale</Link>
-
-        </div> 
-
-        <div className='navbar-icons'>
-        <Image
-          className='icon'
-          src="/search.png"
-          alt="Search"
-          height={30}
-          width={30}
-        />
-         <Image
-          className='icon'
-          src="/user.png"
-          alt="User"
-          height={30}
-          width={30}
-        />
-         <Image
-           className='icon'
-           src="/cart.png"
-           alt="Cart"
-           height={30}
-           width={30}
-        />
+        <div
+          onClick={() => setNavActive(!navActive)}
+          className={`nav__menu-bar`}
+        >
+        </div>
+        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+          {MENU_LIST.map((menu, idx) => (
+            <div
+              onClick={() => {
+                setActiveIdx(idx);
+                setNavActive(false);
+              }}
+              key={menu.text}
+            >
+              <NavItem active={activeIdx === idx} {...menu} />
+            </div>
+          ))}
         </div>
       </nav>
-    </div>
-  )
-}
+    </header>
+  );
+};
+
+export default Navbar;

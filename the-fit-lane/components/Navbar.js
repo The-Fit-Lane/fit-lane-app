@@ -11,22 +11,22 @@ const Navbar = () => {
       <ul className="nav-links">
         <li>
           <Link href="/" as="/">
-            <span>Home</span>
+            <span>Women</span>
           </Link>
         </li>
         <li>
           <Link href="/about" as="/about">
-            <span>About</span>
+            <span>Men</span>
           </Link>
         </li>
         <li>
           <Link href="/services" as="/services">
-            <span>Services</span>
+            <span>Accesories</span>
           </Link>
         </li>
         <li>
           <Link href="/contact" as="/contact">
-            <span>Contact</span>
+            <span>Gift Sale</span>
           </Link>
         </li>
       </ul>
@@ -36,6 +36,8 @@ const Navbar = () => {
           justify-content: space-between;
           align-items: center;
           padding: 1rem;
+          background-color: black;
+          color: white;
         }
         .logo {
           font-weight: bold;
@@ -49,8 +51,21 @@ const Navbar = () => {
         }
         .nav-links li span {
           text-decoration: none;
-          color: #333;
           font-size: 1.2rem;
+          color: white;
+        }
+        .nav-links li span::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background-color: white;
+          transition: all 0.3s ease-in-out;
+        }
+        .nav-links li span:hover::before {
+          width: 100%;
         }
       `}</style>
     </nav>
